@@ -9,6 +9,7 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    background-color: thistle;
 }
 
 
@@ -16,9 +17,10 @@ section {
 
 
 .gowocard{
-    margin: auto;
-    width: 300px;
+    margin: 10px 0px;
+    width: calc(25% - 15px);
     background-color: bisque;
+    
 }
 
 .gowotop{
@@ -28,6 +30,7 @@ section {
 .gowoimg{
     aspect-ratio: 4/3;
     object-fit: cover;
+   
 
 }
 
@@ -51,22 +54,32 @@ section {
     display: inline-block;
     border: 6px solid rgb(105, 29, 15);
     clip-path: polygon(100% 100%, 0 0, 100% 0);
-    bottom:-11px ;
+    bottom:-12px ;
     left:0;
-    /* transform: translateX(-60%); */
     z-index: 2;
 }
 
-.discount {
+.img-wrap{
+    position: relative;
+    overflow: hidden;
+}
+
+.hot::before{
+    content: "HOT";
     position: absolute;
-    right: 0;
-    top: 0;
-    background-color: darkkhaki;
+    right: -38px;
+    top: 10px;
+    transform: rotate(45deg);
+    color: #fff;
+    background-color: rgb(253, 149, 30);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 600;
-    padding: 5px;
-
+    letter-spacing: 2px;
+    padding:  0px 38px;
+    padding-top: 3px;
+    box-shadow: 0px 1px 1px 0px grey;
+    
 }
 
 .gowodown{
